@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+    <div class="b_form">
+        <form action="" method="post" class="form" id="i_form">
+            {% csrf_token %}
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" class="form-control" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" required>
+            
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    
+</body>
+</html>
